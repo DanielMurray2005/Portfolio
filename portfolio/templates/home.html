@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="../static/home.css">
+    <meta charset="utf-8">
+    <title>Daniel Murray | Home</title>
+  </head>
+  <body>
+    {% extends "navbar.html" %}
+    {% block content %}
+    <div class="page">
+
+        <div class="title">
+          <h1>
+            Daniel Murray
+          </h1>
+        </div>
+
+        <div class="bubble" id="intro">
+          Hello! My name is Daniel, and I am currently a first-year student at Virginia Tech.
+          I am majoring in Computer Engineering, though I intend to concentrate on Machine Learning within
+          the CE degree at Virginia Tech.
+        </div>
+      
+        <img src="https://media.licdn.com/dms/image/D5603AQHcsWfPbY9fyg/profile-displayphoto-shrink_200_200/0/1694455236560?e=2147483647&v=beta&t=MS7KUBIeJG7LNqDdExN5X9PC_QL6qCjASgvnh360U9Q" alt="Profile Picture" class="pfp" onclick="window.open('https://www.linkedin.com/in/daniel-murray-65373123b/', '_blank')">
+        
+        <div class="bubble" id="about">
+          I created this website as a way to show off projects that I complete. I enjoy coding and I figured
+          a website, which I created with Python (Flask), HTML, CSS, and JavaScript, is the perfect way to demonstrate necessary skills.
+        </div>
+
+        <div id="filler"></div>
+        
+    </div>
+
+    <script>
+      document.querySelector('.pfp').addEventListener('mouseover', () => {
+        document.querySelector('.pfp').src="../static/linkedin.png";
+        document.querySelector('.pfp').style="opacity:0.8;";
+      })
+      document.querySelector('.pfp').addEventListener('mouseout', () => {
+        document.querySelector('.pfp').src="https://media.licdn.com/dms/image/D5603AQHcsWfPbY9fyg/profile-displayphoto-shrink_200_200/0/1694455236560?e=2147483647&v=beta&t=MS7KUBIeJG7LNqDdExN5X9PC_QL6qCjASgvnh360U9Q";
+        document.querySelector('.pfp').style="opacity:1;";
+      })
+    </script>
+    {% endblock %}
+  </body>
+</html>

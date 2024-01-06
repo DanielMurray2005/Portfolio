@@ -1,0 +1,23 @@
+.page{
+    background-image: radial-gradient(circle at left, rgb(247, 164, 86) 0, white 360%);
+}
+.page .bubble{
+    font-size: 0.9em;
+}
+.projectImage{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 10px;
+}
+.pictureHolder{
+    margin: auto;
+    width: 50vw;
+    height: 50vh;
+}
+.tech img{
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+}

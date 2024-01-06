@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/courses.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Murray | Courses</title>
+</head>
+<body>
+    {% extends "navbar.html" %}
+    {% block content %}
+    <div class="page" id="intro_info">
+        <div class="title">
+            <h1>
+              Courses
+            </h1>
+        </div>
+        <div class="bubble row2 scol1 ecol2">
+            <p>Semesters Complete:</p> 1
+        </div>
+        <div class="bubble row2 scol2 ecol3">
+            <p>Official Class:</p> Sophomore
+        </div>
+        <div class="bubble row2 scol3 ecol4">
+            <p>Current Major:</p> Computer Engineering
+        </div>
+        <div class="bubble row2 scol4 ecol5">
+            <p>Cumulative GPA:</p> 4.00
+        </div>
+        <button 
+        onclick="window.scrollTo({top: window.innerHeight, behavior: 'smooth'})"
+        class="row3 scol2 ecol4"
+        style="width: 50%; height: 30%; margin: auto; border: none;">See Courses</button>
+    </div>
+
+    <div class="page buffer"></div>
+
+    <div class="page" id="page2">
+        <h2>Transfer Credits Earned</h2>
+
+        <div id="lower_transcript">
+            <div class="bubble row1 scol1 ecol3">
+                <p>Virginia Tech Corresponding Course:</p>
+            </div>
+            <div class="bubble row1 scol3 ecol5" id="courseComplete">
+                <p>Course Completed:</p>
+            </div>
+    
+            <div class="bubble row2 scol1 ecol3">
+                <a href="https://www.pathways.prov.vt.edu/students-and-advisors/courses/hist-1115-1116.html" target="_blank">HIST 1115, HIST 1116</a>
+            </div>
+            <div class="bubble row2 scol3 ecol5">
+                <a href="https://apstudents.collegeboard.org/courses/ap-united-states-history" target="_blank">AP United States History</a>
+            </div>
+    
+            <div class="bubble row3 scol1 ecol3">
+                <a href="https://cs.vt.edu/Undergraduate/courses/CS1114.html" target="_blank">CS 1114</a>
+            </div>
+            <div class="bubble row3 scol3 ecol5">
+                <a href="https://apstudents.collegeboard.org/courses/ap-computer-science-a" target="_blank">AP Computer Science A</a>
+            </div>
+    
+            <div class="bubble row4 scol1 ecol3">
+                <a href="https://www.coursicle.com/vt/courses/ENGL/1105/" target="_blank">ENGL 1105, 1106</a>
+            </div>
+            <div class="bubble row4 scol3 ecol5">
+                <a href="https://apstudents.collegeboard.org/courses/ap-english-language-and-composition" target="_blank">AP English Language and Composition</a>
+            </div>
+    
+            <div class="bubble row5 scol1 ecol3">
+                MATH <a href="https://math.vt.edu/undergrad-math/courses/math-1225.html" target="_blank">1225</a>, <a href="https://math.vt.edu/undergrad-math/courses/math-1226.html" target="_blank">1226</a>
+            </div>
+            <div class="bubble row5 scol3 ecol5">
+                <a href="https://apstudents.collegeboard.org/courses/ap-calculus-bc" target="_blank">AP Calculus BC</a>
+            </div>
+    
+            <div class="bubble row6 scol2 ecol4" style="font-size: 0.7em;">
+                Additionally, I received credit for AP Statistics, AP Physics 1, and AP Literature and Composition.
+                The VT corresponding courses are STAT 3604, PHYS 2205 + 2215, and ENGL 1105 + 1106, respectively. 
+                These courses do not accelerate my degree as I will need to take STAT 4714 and PHYS 2305 + 2306 instead. The ENGL courses have already been received.
+                Thus, I am not listing these courses above.
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="page buffer"></div>
+
+    <div class="page">
+        <h2>Fall 2023 - Completed</h2>
+
+        <div class="row3" id="lower_transcript">
+            <div class="bubble row1 scol1 ecol2"><p>Course Code:</p></div>
+            <div class="bubble row1 scol2 ecol4"><p>Course Name:</p></div>
+            <div class="bubble row1 scol4 ecol5"><p>Letter Grade:</p></div>
+    
+            <div class="bubble row2 scol1 ecol2"><a href="https://www.coursicle.com/vt/courses/CHEM/1035/" target="_blank">CHEM 1035</a></div>
+            <div class="bubble row2 scol2 ecol4">General Chemistry</div>
+            <div class="bubble row2 scol4 ecol5">A</div>
+    
+            <div class="bubble row3 scol1 ecol2"><a href="https://www.coursicle.com/vt/courses/CHEM/1045/" target="_blank">CHEM 1045</a></div>
+            <div class="bubble row3 scol2 ecol4">General Chemistry Laboratory</div>
+            <div class="bubble row3 scol4 ecol5">A</div>
+    
+            <div class="bubble row4 scol1 ecol2"><a href="https://www.coursicle.com/vt/courses/ENGE/1414/" target="_blank">ENGE 1414</a></div>
+            <div class="bubble row4 scol2 ecol4">Foundations of Engineering Practice</div>
+            <div class="bubble row4 scol4 ecol5">A</div>
+    
+            <div class="bubble row5 scol1 ecol2"><a href="https://www.coursicle.com/vt/courses/ENGL/1504/" target="_blank">ENGL 1504</a></div>
+            <div class="bubble row5 scol2 ecol4">Introduction to Contemporary Linguistics</div>
+            <div class="bubble row5 scol4 ecol5">A</div>
+    
+            <div class="bubble row6 scol1 ecol2"><a href="https://www.coursicle.com/vt/courses/ENGR/1054/" target="_blank">ENGR 1054</a></div>
+            <div class="bubble row6 scol2 ecol4">First Year Galileo Seminar</div>
+            <div class="bubble row6 scol4 ecol5 pointer" onclick="alert('This class has assignments due throughout the spring semester.')">Incomplete - Pending Grades</div>
+    
+            <div class="bubble row7 scol1 ecol2"><a href="https://math.vt.edu/undergrad-math/courses/math-2204.html" target="_blank">MATH 2204</a></div>
+            <div class="bubble row7 scol2 ecol4">Introduction to Multivariable Calculus</div>
+            <div class="bubble row7 scol4 ecol5">A</div>
+        </div>
+    </div>
+
+    <div class="page buffer"></div>
+
+    <div class="page">
+        <h2>Spring 2024 - In Progress</h2>
+        <div id="lower_transcript">
+            <div class="bubble row1 scol1 ecol2"><p>Course Code:</p></div>
+            <div class="bubble row1 scol2 ecol4"><p>Course Name:</p></div>
+            <div class="bubble row1 scol4 ecol5"><p>Letter Grade:</p></div>
+
+            <div class="bubble row2 scol1 ecol2"><a href="https://ece.vt.edu/undergrad/courses/1004.html" target="_blank">ECE 1004</a></div>
+            <div class="bubble row2 scol2 ecol4">Introduction to ECE Concepts</div>
+            <div class="bubble row2 scol4 ecol5">-</div>
+
+            <div class="bubble row3 scol1 ecol2"><a href="https://www.coursicle.com/vt/courses/GEOG/1014/" target="_blank">GEOG 1014</a></div>
+            <div class="bubble row3 scol2 ecol4">World Regions</div>
+            <div class="bubble row3 scol4 ecol5">-</div>
+
+            <div class="bubble row4 scol1 ecol2"><a href="https://math.vt.edu/undergrad-math/courses/math-2114.html" target="_blank">MATH 2114</a></div>
+            <div class="bubble row4 scol2 ecol4">Introduction to Linear Algebra</div>
+            <div class="bubble row4 scol4 ecol5">-</div>
+
+            <div class="bubble row5 scol1 ecol2"><a href="https://www.coursicle.com/vt/courses/MATH/2534/" target="_blank">MATH 2534</a></div>
+            <div class="bubble row5 scol2 ecol4">Introduction to Discrete Math</div>
+            <div class="bubble row5 scol4 ecol5">-</div>
+
+            <div class="bubble row6 scol1 ecol2"><a href="https://www.coursicle.com/vt/courses/PHYS/2305/" target="_blank">PHYS 2305</a></div>
+            <div class="bubble row6 scol2 ecol4">Foundations of Physics 1</div>
+            <div class="bubble row6 scol4 ecol5">-</div>
+        </div>
+    </div>
+
+    <div class="page buffer"></div>
+
+    <div class="page">
+        <h2>Fall 2024 - Planned Courses</h2>
+
+        <div id="lower_transcript">
+            <div class="bubble row1 scol1 ecol2"><p>Course Code:</p></div>
+            <div class="bubble row1 scol2 ecol4"><p>Course Name:</p></div>
+            <div class="bubble row1 scol4 ecol5"><p>Letter Grade:</p></div>
+
+            <div class="bubble row2 scol1 ecol2"><a href="https://math.vt.edu/undergrad-math/courses/math-2214.html" target="_blank">MATH 2214</a></div>
+            <div class="bubble row2 scol2 ecol4">Introduction to Differential Equations</div>
+            <div class="bubble row2 scol4 ecol5">-</div>
+
+            <div class="bubble row3 scol1 ecol2"><a href="https://www.coursicle.com/vt/courses/PHYS/2306/" target="_blank">PHYS 2306</a></div>
+            <div class="bubble row3 scol2 ecol4">Foundations of Physics 2</div>
+            <div class="bubble row3 scol4 ecol5">-</div>
+
+            <div class="bubble row4 scol1 ecol2"><a href="https://ece.vt.edu/undergrad/courses/2024.html" target="_blank">ECE 2024</a></div>
+            <div class="bubble row4 scol2 ecol4">Circuits and Devices</div>
+            <div class="bubble row4 scol4 ecol5">-</div>
+
+            <div class="bubble row5 scol1 ecol2"><a href="https://ece.vt.edu/undergrad/courses/2514.html" target="_blank">ECE 2514</a></div>
+            <div class="bubble row5 scol2 ecol4">Computational Engineering</div>
+            <div class="bubble row5 scol4 ecol5">-</div>
+
+            <div class="bubble row6 scol1 ecol2"><a href="https://ece.vt.edu/undergrad/courses/2544.html" target="_blank">ECE 2544</a></div>
+            <div class="bubble row6 scol2 ecol4">Fundamentals of Digital Systems</div>
+            <div class="bubble row6 scol4 ecol5">-</div>
+        </div>
+
+    </div>
+
+    <div class="page buffer"></div>
+
+    <div class="page">
+        <h2>Spring 2025 - Planned Courses</h2>
+
+        <div id="lower_transcript">
+            <div class="bubble row1 scol1 ecol2"><p>Course Code:</p></div>
+            <div class="bubble row1 scol2 ecol4"><p>Course Name:</p></div>
+            <div class="bubble row1 scol4 ecol5"><p>Letter Grade:</p></div>
+
+            <div class="bubble row2 scol1 ecol2"><a href="https://ece.vt.edu/undergrad/courses/2214.html" target="_blank">ECE 2214</a></div>
+            <div class="bubble row2 scol2 ecol4">Physical Electronics</div>
+            <div class="bubble row2 scol4 ecol5">-</div>
+
+            <div class="bubble row3 scol1 ecol2"><a href="https://ece.vt.edu/undergrad/courses/2564.html" target="_blank">ECE 2564</a></div>
+            <div class="bubble row3 scol2 ecol4">Embedded Systems</div>
+            <div class="bubble row3 scol4 ecol5">-</div>
+
+            <div class="bubble row4 scol1 ecol2"><a href="https://ece.vt.edu/undergrad/courses/2714.html" target="_blank">ECE 2714</a></div>
+            <div class="bubble row4 scol2 ecol4">Signals and Systems</div>
+            <div class="bubble row4 scol4 ecol5">-</div>
+
+            <div class="bubble row5 scol1 ecol2"><a href="https://ece.vt.edu/undergrad/courses/2804.html" target="_blank">ECE 2804</a></div>
+            <div class="bubble row5 scol2 ecol4">Integrated Design Project</div>
+            <div class="bubble row5 scol4 ecol5">-</div>
+
+            <div class="bubble row6 scol1 ecol2"><a href="https://www.coursicle.com/vt/courses/STAT/4714/" target="_blank">STAT 4714</a></div>
+            <div class="bubble row6 scol2 ecol4">Statistics for Electrical Engineers</div>
+            <div class="bubble row6 scol4 ecol5">-</div>
+        </div>
+    </div>
+
+    <div class="page buffer"></div>
+
+    <div class="page">
+        <h2>Fall 2025 - Planned Courses</h2>
+
+        <div id="lower_transcript">
+            <div class="bubble row1 scol1 ecol2"><p>Course Code:</p></div>
+            <div class="bubble row1 scol2 ecol4"><p>Course Name:</p></div>
+            <div class="bubble row1 scol4 ecol5"><p>Letter Grade:</p></div>
+
+            <div class="bubble row2 scol1 ecol2"><a href="https://ece.vt.edu/undergrad/courses/3504.html" target="_blank">ECE 3504</a></div>
+            <div class="bubble row2 scol2 ecol4">Principles of Computer Architecture</div>
+            <div class="bubble row2 scol4 ecol5">-</div>
+
+            <div class="bubble row3 scol1 ecol2"><a href="https://ece.vt.edu/undergrad/courses/3514.html" target="_blank">ECE 3514</a></div>
+            <div class="bubble row3 scol2 ecol4">Data Structures and Algorithms</div>
+            <div class="bubble row3 scol4 ecol5">-</div>
+
+            <div class="bubble row4 scol1 ecol2"><a href="https://www.coursicle.com/vt/courses/ITDS/1114/" target="_blank">ITDS 1114</a></div>
+            <div class="bubble row4 scol2 ecol4">Design Appreciation</div>
+            <div class="bubble row4 scol4 ecol5">-</div>
+
+            <div class="bubble row5 scol1 ecol2"><a href="https://www.coursicle.com/vt/courses/FIN/4014/" target="_blank">FIN 4014</a></div>
+            <div class="bubble row5 scol2 ecol4">Cyber Law and Policy</div>
+            <div class="bubble row5 scol4 ecol5">-</div>
+
+            <div class="bubble row6 scol1 ecol2"><a href="https://www.coursicle.com/vt/courses/MATH/3134" target="_blank">MATH 3134</a></div>
+            <div class="bubble row6 scol2 ecol4">Applied Combinatorics and Graph Theory</div>
+            <div class="bubble row6 scol4 ecol5">-</div>
+        </div>
+    </div>
+
+    <div class="page buffer"></div>
+
+    <div class="page">
+        <h2>Spring 2026 - Planned Courses</h2>
+
+        <div id="lower_transcript">
+            <div class="bubble row1 scol1 ecol2"><p>Course Code:</p></div>
+            <div class="bubble row1 scol2 ecol4"><p>Course Name:</p></div>
+            <div class="bubble row1 scol4 ecol5"><p>Letter Grade:</p></div>
+
+            <div class="bubble row2 scol1 ecol2"><a href="https://ece.vt.edu/undergrad/courses/3574.html" target="_blank">ECE 3574</a></div>
+            <div class="bubble row2 scol2 ecol4">Applied Software Design</div>
+            <div class="bubble row2 scol4 ecol5">-</div>
+
+            <div class="bubble row3 scol1 ecol2"><a href="https://ece.vt.edu/undergrad/courses/4524.html" target="_blank">ECE 4524</a></div>
+            <div class="bubble row3 scol2 ecol4">Artificial Intelligence and Engineering Applications</div>
+            <div class="bubble row3 scol4 ecol5">-</div>
+
+            <div class="bubble row4 scol1 ecol2"><a href="https://ece.vt.edu/undergrad/courses/3564.html" target="_blank">ECE 3564</a></div>
+            <div class="bubble row4 scol2 ecol4">Introduction to Computer Networking</div>
+            <div class="bubble row4 scol4 ecol5">-</div>
+
+            <div class="bubble row5 scol1 ecol2"><a href="https://ece.vt.edu/undergrad/courses/4424.html" target="_blank">ECE 4424</a></div>
+            <div class="bubble row5 scol2 ecol4">Machine Learning</div>
+            <div class="bubble row5 scol4 ecol5">-</div>
+
+            <div class="bubble row6 scol1 ecol2"><a href="https://ece.vt.edu/undergrad/courses/4944.html" target="_blank">ECE 4944</a></div>
+            <div class="bubble row6 scol2 ecol4">Cybersecurity Seminar</div>
+            <div class="bubble row6 scol4 ecol5">-</div>
+            
+            <div class="bubble row7 scol1 ecol2"><a href="https://cs.vt.edu/Undergraduate/courses/CS3114.html" target="_blank">CS 3114</a></div>
+            <div class="bubble row7 scol2 ecol4">Data Structures and Algorithms</div>
+            <div class="bubble row7 scol4 ecol5">-</div>
+        </div>
+    </div>
+
+    <div class="page buffer"></div>
+
+    <div class="page">
+        <h2>Fall 2026 - Planned Courses</h2>
+
+        <div id="lower_transcript">
+            <div class="bubble row1 scol1 ecol2"><p>Course Code:</p></div>
+            <div class="bubble row1 scol2 ecol4"><p>Course Name:</p></div>
+            <div class="bubble row1 scol4 ecol5"><p>Letter Grade:</p></div>
+
+            <div class="bubble row2 scol1 ecol2"><a href="https://ece.vt.edu/undergrad/courses/4805.html" target="_blank">ECE 4805</a></div>
+            <div class="bubble row2 scol2 ecol4">Senior Design Project</div>
+            <div class="bubble row2 scol4 ecol5">-</div>
+
+            <div class="bubble row3 scol1 ecol2"><a href="https://ece.vt.edu/undergrad/courses/4525.html" target="_blank">ECE 4525</a></div>
+            <div class="bubble row3 scol2 ecol4">Video Game Design and Engineering</div>
+            <div class="bubble row3 scol4 ecol5">-</div>
+
+            <div class="bubble row4 scol1 ecol2"><a href="https://cs.vt.edu/Undergraduate/courses/CS4264.html" target="_blank">CS 4264</a></div>
+            <div class="bubble row4 scol2 ecol4">Principles of Computer Security</div>
+            <div class="bubble row4 scol4 ecol5">-</div>
+
+            <div class="bubble row5 scol1 ecol2"><a href="https://ece.vt.edu/undergrad/courses/4554.html" target="_blank">ECE 4554</a></div>
+            <div class="bubble row5 scol2 ecol4">Introduction to Computer Vision</div>
+            <div class="bubble row5 scol4 ecol5">-</div>
+
+            <div class="bubble row6 scol1 ecol2">N/A</div>
+            <div class="bubble row6 scol2 ecol4">Unplanned</div>
+            <div class="bubble row6 scol4 ecol5">-</div>
+        </div>
+    </div>
+
+    <div class="page buffer"></div>
+
+    <div class="page">
+        <h2>Spring 2027 - Planned Courses</h2>
+
+        <div id="lower_transcript">
+            <div class="bubble row1 scol1 ecol2"><p>Course Code:</p></div>
+            <div class="bubble row1 scol2 ecol4"><p>Course Name:</p></div>
+            <div class="bubble row1 scol4 ecol5"><p>Letter Grade:</p></div>
+
+            <div class="bubble row2 scol1 ecol2"><a href="https://ece.vt.edu/undergrad/courses/4806.html" target="_blank">ECE 4806</a></div>
+            <div class="bubble row2 scol2 ecol4">Senior Design Project</div>
+            <div class="bubble row2 scol4 ecol5">-</div>
+
+            <div class="bubble row3 scol1 ecol2"><a href="https://ece.vt.edu/undergrad/courses/4560.html" target="_blank">ECE 4560</a></div>
+            <div class="bubble row3 scol2 ecol4">Computer and Network Security</div>
+            <div class="bubble row3 scol4 ecol5">-</div>
+
+            <div class="bubble row4 scol1 ecol2"><a href="https://ece.vt.edu/undergrad/courses/4564.html" target="_blank">ECE 4564</a></div>
+            <div class="bubble row4 scol2 ecol4">Network Application Design</div>
+            <div class="bubble row4 scol4 ecol5">-</div>
+
+            <div class="bubble row5 scol1 ecol2"><a href="https://www.coursicle.com/vt/courses/MATH/4175" target="_blank">MATH 4175</a></div>
+            <div class="bubble row5 scol2 ecol4">Cryptography 1</div>
+            <div class="bubble row5 scol4 ecol5">-</div>
+
+            <div class="bubble row6 scol1 ecol2">N/A</div>
+            <div class="bubble row6 scol2 ecol4">Unplanned</div>
+            <div class="bubble row6 scol4 ecol5">-</div>
+        </div>
+    </div>
+
+    <div class="page buffer"></div>
+
+    <div class="page">
+        <h2 class="row1">Expected graduation: Spring 2027</h2>
+
+        <div id="lower_transcript">
+            <div class="bubble row1 scol1 ecol2"><p>Anticipated Degree:</p></div>
+            <div class="bubble row1 scol2 ecol3"><p>Anticipated Major:</p></div>
+            <div class="bubble row1 scol3 ecol4"><p>Anticipated Secondary Focus:</p></div>
+            <div class="bubble row1 scol4 ecol5"><p>Anticipated Minor(s):</p></div>
+    
+            <div class="bubble row2 scol1 ecol2">B.S. Computer Engineering</div>
+            <div class="bubble row2 scol2 ecol3">Machine Learning</div>
+            <div class="bubble row2 scol3 ecol4">Networking and Cybersecurity</div>
+            <div class="bubble row2 scol4 ecol5">Computer Science</div>
+            <div class="bubble row3 scol4 ecol5">Cybersecurity</div>
+            <div class="bubble row4 scol4 ecol5">Mathematics</div>
+        </div>
+        
+
+    </div>
+    {% endblock %}
+</body>
+</html>

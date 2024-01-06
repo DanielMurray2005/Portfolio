@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/portfolio.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Murray | Portfolio</title>
+</head>
+<body>
+    {% extends "navbar.html" %}
+    {% block content %}
+    <div class="page">
+        <div class="title scol1 ecol5" style="grid-row-start:1; grid-row-end:2;">
+            <h1>Projects</h1>
+        </div>
+
+        <button 
+        onclick="window.scrollTo({top: window.innerHeight, behavior: 'smooth'})"
+        class="row3 scol2 ecol4"
+        style="width: 50%; height: 30%; margin: auto; border: none;">See Projects</button>
+    </div>
+
+    <div class="page buffer"></div>
+
+    <div class="page">
+        <h2>Personal Website</h2>
+
+        <div id="lower_transcript">
+            <div class="bubble row1 scol1 ecol3">
+                This project was a means of consolidating other projects into a portfolio for employers and scholarship opportunities.
+                I also wanted to learn how to use Flask, which this project assisted in giving a foundation of.
+                I hope that this project inspires me to create more projects to add to the portfolio.
+            </div>
+            <div class="pictureHolder row1 scol3 ecol5">
+                <img src="../static/projects/images/website.png" alt="website" class="projectImage">
+            </div>
+            <div class="bubble row2 scol1">
+                <em>Technologies Used:</em>
+            </div>
+            <div class="tech row2 scol2 ecol4">
+                <img src="../static/projects/technologies/HTML.png" alt="HTML">
+                <img src="../static/projects/technologies/CSS.png" alt="CSS" style="width: 53px;">
+                <img src="../static/projects/technologies/JS.png" alt="JS" style="height: 64px; width: 64px;">
+                <img src="../static/projects/technologies/Python.png" alt="PYTHON">
+                <img src="../static/projects/technologies/Flask.png" alt="FLASK" style="width: 165px;">
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="page buffer"></div>
+
+    <div class="page">
+        <h2>Functional 2-Player Chess Game</h2>
+
+        <div id="lower_transcript">
+            <div class="bubble row1 scol1 ecol3">
+                I created this project as a means of exploring recursion. I had recently learned about recursion in my Computer Science class
+                in 11th grade, so I used it to gather lists of legal moves for various pieces. I used a 2-dimensional array to represent the chess board.
+                This project still lacks special moves like castling and en passant, however, it works fairly well. Ultimately, recursion is not the most efficient way
+                to gather a piece's legal moves, but it was an enjoyable exploration.
+            </div>
+            <div class="pictureHolder row1 scol3 ecol5">
+                <img src="../static/projects/images/chess.png" alt="website" class="projectImage">
+            </div>
+            <div class="bubble row2 scol1">
+                <em>Technologies Used:</em>
+            </div>
+            <div class="tech row2 scol2 ecol4">
+                <img src="../static/projects/technologies/HTML.png" alt="HTML">
+                <img src="../static/projects/technologies/CSS.png" alt="CSS" style="width: 53px;">
+                <img src="../static/projects/technologies/JS.png" alt="JS" style="height: 64px; width: 64px;">
+            </div>
+
+            <div class="bubble row2 scol4 ecol5" style="width: 100%; color:black;">
+                <a href="https://github.com/DanielMurray2005/Portfolio/tree/main/chess" target="_blank" style="color: black;">See Github</a>
+            </div>
+            
+        </div>
+    </div>
+    {% endblock %}
+    
+</body>
+</html>

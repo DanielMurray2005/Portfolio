@@ -1,0 +1,18 @@
+.page{
+    background-image: radial-gradient(circle at left, rgb(127, 160, 218) 0, white 380%);
+}
+.title{
+    grid-row-start:1;
+    grid-row-end:2;
+    grid-column-start:1;
+    grid-column-end:5;
+}
+.page .bubble{
+    font-size: 0.9em;
+}
+.bubble > p{
+    font-weight: bold;
+}
+.bubble > a{
+    color: black;
+}

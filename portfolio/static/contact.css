@@ -1,0 +1,32 @@
+.page{
+    /* background-image: radial-gradient(circle at left, pink 0, white 280%); */
+    background-image: radial-gradient(circle at left, lightgreen 0, white 280%);
+}
+.title{
+    /* border: 1px solid black; */
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start:1;
+    grid-column-end:7;
+}
+#contact_intro{
+    text-align: left;
+    grid-row-start:2;
+    grid-row-end:3;
+    grid-column-start:3;
+    grid-column-end:4;
+}
+#contact_info{
+    text-align: left;
+    /* border: 1px solid black; */
+    grid-row-start:2;
+    grid-row-end:3;
+    grid-column-start:4;
+    grid-column-end:6;
+}
+#filler{
+    grid-row-start:3;
+    grid-row-end:5;
+    grid-column-start:1;
+    grid-column-end:7;
+}
